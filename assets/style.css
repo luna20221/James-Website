@@ -401,7 +401,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
 
 /* Desktop layout lock: keep large screens as a proper desktop site. */
 @media(min-width:821px){
-  :root{--max:1152px}
+  :root{--max:1480px}
   .hero{
     background:
       linear-gradient(90deg,rgba(8,15,31,.76) 0%,rgba(8,15,31,.48) 48%,rgba(8,15,31,.70) 100%),
@@ -409,41 +409,38 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
   }
   .hero-grid{
     display:grid!important;
-    grid-template-columns:minmax(0,1fr) minmax(340px,.86fr)!important;
-    gap:40px!important;
-    align-items:center!important;
-    min-height:620px!important;
-    padding:56px 0 66px!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:0!important;
+    align-items:end!important;
+    min-height:560px!important;
+    padding:70px 0 72px!important;
   }
   .hero-copy{
-    max-width:760px!important;
+    max-width:900px!important;
   }
   .hero-copy h1{
-    font-size:clamp(2.35rem,3.7vw,3.85rem)!important;
-    max-width:760px!important;
+    font-size:clamp(2.55rem,3.45vw,4.15rem)!important;
+    max-width:900px!important;
   }
   .hero-copy p{
-    max-width:700px!important;
+    max-width:760px!important;
   }
   .hero .desktop-quote{
-    display:block!important;
-    justify-self:end;
-    max-width:430px;
-    width:100%;
+    display:none!important;
   }
   .mobile-quote-section.quote-section{
     display:block!important;
-    padding:72px 0!important;
+    padding:78px 0!important;
   }
   .quote-section:before{
     display:block!important;
-    width:calc(50vw + 286px)!important;
-    clip-path:polygon(0 0,100% 0,86% 100%,0 100%)!important;
+    width:62vw!important;
+    clip-path:polygon(0 0,100% 0,90% 100%,0 100%)!important;
   }
   .quote-layout{
     display:grid!important;
-    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
-    gap:40px!important;
+    grid-template-columns:minmax(0,1fr) minmax(520px,.92fr)!important;
+    gap:58px!important;
     align-items:center!important;
   }
   .quote-copy,
@@ -457,16 +454,16 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
     max-width:100%!important;
   }
   .quote-copy{
-    max-width:500px!important;
+    max-width:640px!important;
   }
   .quote-copy h2{
-    font-size:clamp(2rem,2.45vw,2.75rem)!important;
-    max-width:500px!important;
+    font-size:clamp(2.35rem,2.7vw,3.15rem)!important;
+    max-width:640px!important;
   }
   .quote-copy p,
   .quote-points,
   .guarantee-badge{
-    max-width:480px!important;
+    max-width:590px!important;
   }
   .service-cards{
     grid-template-columns:repeat(6,minmax(0,1fr))!important;
@@ -483,24 +480,25 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
 }
 
 @media(min-width:1400px){
-  :root{--max:1152px}
+  :root{--max:1520px}
   .hero-grid{
-    grid-template-columns:minmax(0,1fr) minmax(340px,.86fr)!important;
-    min-height:640px!important;
-  }
-  .hero .desktop-quote{
-    max-width:430px;
+    grid-template-columns:minmax(0,1fr)!important;
+    min-height:590px!important;
   }
   .quote-section:before{
-    width:calc(50vw + 286px)!important;
-    clip-path:polygon(0 0,100% 0,86% 100%,0 100%)!important;
+    width:62vw!important;
+    clip-path:polygon(0 0,100% 0,90% 100%,0 100%)!important;
   }
   .quote-layout{
-    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-columns:minmax(0,1fr) minmax(560px,.92fr)!important;
   }
 }
 
 @media(min-width:821px) and (max-width:1100px){
+  :root{--max:980px}
+  .hero-grid{
+    min-height:520px!important;
+  }
   .mobile-quote-section.quote-section{
     display:block!important;
     background:linear-gradient(180deg,#0f172a 0%,#17356d 46%,#f8fafc 46%,#f8fafc 100%)!important;
@@ -515,23 +513,26 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-f
   .quote-copy{
     max-width:760px!important;
   }
+  .quote-section .mobile-quote-card{
+    max-width:760px!important;
+  }
 }
 
 @media(min-width:1800px){
-  :root{--max:1152px}
+  :root{--max:1560px}
   .quote-section:before{
-    width:calc(50vw + 286px)!important;
-    clip-path:polygon(0 0,100% 0,86% 100%,0 100%)!important;
+    width:61vw!important;
+    clip-path:polygon(0 0,100% 0,91% 100%,0 100%)!important;
   }
   .quote-layout{
-    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
-    gap:40px!important;
+    grid-template-columns:minmax(0,1fr) minmax(600px,.92fr)!important;
+    gap:64px!important;
   }
   .quote-copy,
   .quote-copy h2{
-    max-width:500px!important;
+    max-width:660px!important;
   }
   .quote-copy h2{
-    font-size:clamp(2rem,2.1vw,2.7rem)!important;
+    font-size:clamp(2.4rem,2.35vw,3.25rem)!important;
   }
 }
